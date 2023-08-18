@@ -215,4 +215,15 @@
     .main_text > p:first-child {
         padding: 2rem;
     }
+    .form {
+      padding: 2rem;
+    }
+    .form_container {
+      width: 80%;
+    }
+    .input_container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
   }
