@@ -1,7 +1,9 @@
-const userPass1 = document.querySelector('#password')
-const userPass2 = document.querySelector('#confirm_password')
-const subButt = document.querySelector('.submit')
-const inputs = document.querySelectorAll('input')
+const userPass1 = document.querySelector('#password');
+const userPass2 = document.querySelector('#confirm_password');
+const noMatch = document.querySelector('.no-match');
+const subButt = document.querySelector('.submit');
+const inputs = document.querySelectorAll('input');
+
 
 
 const checkPass = () => {
@@ -9,7 +11,8 @@ const checkPass = () => {
         userPass1.classList.add('error');
         userPass2.classList.add('error');
     } else if (userPass1.value !== userPass2.value) {
-        userPass2.classList.add('error')
+        userPass2.classList.add('error');
+        noMatch.style.display = 'block';
     } else {
         userPass1.classList.remove('error');
         userPass2.classList.remove('error');
